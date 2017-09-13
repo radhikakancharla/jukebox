@@ -32,10 +32,10 @@ spec:
         - name: RAILS_ENV
           value: production
         - name: PGPASSWORD
-           valueFrom: 
+          valueFrom:
             secretKeyRef:
-             name: topsecret
-             key: pgpassword
-        
+              name: topsecret
+              key: pgpassword
+              
         ports:
         - containerPort: 3333
