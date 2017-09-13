@@ -84,6 +84,9 @@ test:
 #
 production:
   <<: *default
+  host: pgradhika.postgres.database.azure.com
+  username: radhikakancharla@pgradhika
+  password: <%= ENV['PGPASSWORD'] %>
+  sslmode: require
   database: jukebox_production
-  username: jukebox
-  password: <%= ENV['JUKEBOX_DATABASE_PASSWORD'] %>
+  
